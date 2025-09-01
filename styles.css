@@ -9,6 +9,14 @@
       --messageBoxBg: rgba(69, 93, 139, 0.6); /* Rosa oscuro translúcido */
     }
 
+    h2, h3 {
+      align-self: center;
+      justify-self: center;
+      margin: 0;
+      color: #2b8eff;
+      text-shadow: #000000 1px 0 2px;
+
+    }
     * { 
       box-sizing: border-box; 
       -webkit-tap-highlight-color: transparent;
@@ -47,7 +55,7 @@
     }
 
     .heart-container {
-      padding-top: 500px;
+      padding-top: 350px;
       position: relative;
       display: flex;
       align-items: center;

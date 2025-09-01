@@ -1,10 +1,10 @@
 const PHRASES = [
-      "Eres mi mejor aventura ✨ 💖", "Contigo todo es magia 🌙 💖", 
-      "Mi refugio favorito eres tú 🏡 💖", "Tu sonrisa ilumina mi vida 🌟 💖",
-      "Eres mi canción infinita 🎶 💖", "Mi destino eres tú 💫 💖",
-      "Nuestro amor será eterno 🔥 💖", "A tu lado, soy feliz 💖",
-      "Te amo cada día más 💖", "Tu amor es mi inspiración 🎨 💖",
-      "Eres mi hogar y mi aventura 🗺️ 💖", "Contigo el tiempo se detiene ⏰ 💖"
+      "Te amo de aqui hasta marte ✨ 💖", "Contigo todo va mejor 🌙 💖", 
+      "Eres mi lugar seguro 🏡 💖", "Un abrazo tuyo, calma las turbulencias 🌟 💖",
+      "Gracias por estar conmigo a pesar de todo 🎶 💖", "eres mi maestra favorita 💫 💖",
+      "Que nunca acabe nuestra historia 🔥 💖", "A tu lado, soy feliz, muy feliz 💖",
+      "Te amo , Te amo, te amo 💖", "Eres mi persona favorita 🎨 💖",
+      "Tu sornisa me da años de vida 🗺️ 💖", "si lees esto, me debes un beso ⏰ 💖"
     ];
 
     const scene = document.getElementById('scene');
@@ -138,13 +138,13 @@ const PHRASES = [
       el.style.left = startX + 'px';
       el.style.top = startY + 'px';
 
-      const angle = Math.random() * 120 - 150;
-      const shootForce = rand(100, 150);
+      const angle = rand(-100, -80); 
+      const shootForce = rand(300, 350);
       const shootX = Math.cos(angle * Math.PI / 180) * shootForce;
       const shootY = Math.sin(angle * Math.PI / 180) * shootForce;
 
-      const fallDistance = rand(250, 450);
-      const horizontalDrift = rand(-60, 60);
+      const fallDistance = rand(250 , 300);
+      const horizontalDrift = rand(-20, 20);
       const finalX = shootX + horizontalDrift;
       const finalY = shootY + fallDistance;
 
