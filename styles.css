@@ -12,7 +12,7 @@
     .cont-hh {
       position: fixed;
       width: 80%;
-      bottom: 20px; /* Movido a la parte superior */
+      bottom: 70px;
       left: 50%;
       transform: translateX(-50%);
     }
